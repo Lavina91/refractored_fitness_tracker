@@ -1,5 +1,5 @@
 // requiring in the model folder and Router method from express
-const db = require("models");
+const db = require("../models");
 const router = require("express").Router();
 
 
