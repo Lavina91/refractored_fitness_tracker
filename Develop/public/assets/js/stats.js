@@ -1,3 +1,10 @@
+
+
+
+
+// get all workout data from back-end
+API.getWorkoutsInRange().then(populateChart);
+
 function generatePalette() {
   const arr = [
     '#003f5c',
@@ -204,5 +211,4 @@ function workoutNames(data) {
   return [...new Set(workouts)];
 }
 
-// get all workout data from back-end
-API.getWorkoutsInRange().then(populateChart);
+
