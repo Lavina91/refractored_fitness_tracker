@@ -2,8 +2,7 @@
 
 
 
-// get all workout data from back-end
-API.getWorkoutsInRange().then(populateChart);
+
 
 function generatePalette() {
   const arr = [
@@ -210,5 +209,8 @@ function workoutNames(data) {
   // return de-duplicated array with JavaScript `Set` object
   return [...new Set(workouts)];
 }
+
+// get all workout data from back-end
+API.getWorkoutsInRange().then(populateChart);
 
 
