@@ -22,8 +22,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 // will need to require in routes below !!!! ---------------------------------------------------------------------
 
 
-app.use(require('./Develop/routes/html-routes.js'))
-app.use(require('./Develop/routes/api-routes.js'))
+app.use(require('./routes/html-routes.js'))
+app.use(require('./routes/api-routes.js'))
 
 
 
