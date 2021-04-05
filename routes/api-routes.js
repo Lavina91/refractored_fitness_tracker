@@ -51,10 +51,10 @@ router.put("/api/workouts/:id", (req, res) => {
 
 
 //route to create a new workout 
-router.post("/api/workouts", ({ body }, res) => {
+router.post("/api/workouts", (req, res) => {
   
     // creating a new workout inside workout db
-    db.Workout.create(body).then((dbWorkout => {
+    db.Workout.create({}).then((dbWorkout => {
         res.json(dbWorkout);
     })).catch(err => {
         res.json(err);
